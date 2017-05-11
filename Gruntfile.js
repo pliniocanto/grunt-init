@@ -8,6 +8,12 @@ module.exports = function(grunt) {
                 cwd: 'public',
                 src: '**',
                 dest: 'dist'
+            },
+            materialize_lib: {
+                expand: true,
+                cwd: 'node_modules/materialize-css/dist',
+                src: '**',
+                dest: 'dist'
             }
         },
 

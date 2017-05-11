@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <title>Grunt</title>
 
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- build:css css/index.min.css -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
     <!-- endbuild -->
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
 
@@ -27,11 +33,28 @@
         <li>grunt-contrib-uglify</li>
         <li>grunt-contrib-cssmin</li>
         <li>grunt-usemin</li>
+        <li>materializecss</li>
     </ul>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+
 
     <!-- build:js js/index.min.js -->
     <script src="js/index.js"></script>
+    <script src="js/materialize.min.js"></script>
     <!-- endbuild -->
+
+
 
 </body>
 

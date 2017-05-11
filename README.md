@@ -4,6 +4,7 @@
 
 ```
 npm init 
+npm install materialize-css
 sudo npm install grunt-cli -g
 npm install grunt --save-dev
 npm install grunt-contrib-copy --save-dev
