@@ -9,6 +9,12 @@ module.exports = function(grunt) {
                 src: '**',
                 dest: 'dist'
             },
+            jquey_lib: {
+                expand: true,
+                cwd: 'node_modules/jquery/dist',
+                src: '**',
+                dest: 'dist/js'
+            },
             materialize_lib: {
                 expand: true,
                 cwd: 'node_modules/materialize-css/dist',
@@ -29,6 +35,15 @@ module.exports = function(grunt) {
 
         usemin: {
             html: 'dist/**/*.html'
+        },
+
+        imagemin: {
+            public: {
+                expand: true,
+                cwd: 'public/img',
+                src: '**/*.{png,jpg,gif}',
+                dest: 'dist/img'
+            }
         }
     });
 
@@ -38,7 +53,7 @@ module.exports = function(grunt) {
     grunt.registerTask('dist', ['clean', 'copy']);
 
     grunt.registerTask('minifica', ['useminPrepare',
-        'concat', 'uglify', 'cssmin', 'usemin'
+        'concat', 'uglify', 'cssmin', 'usemin', 'imagemin'
     ]);
 
     // registrando tasks
@@ -51,4 +66,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-usemin');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 }
