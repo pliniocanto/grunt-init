@@ -16,6 +16,8 @@ npm install grunt-contrib-cssmin --save-dev
 npm install grunt-usemin --save-dev
 npm install grunt-contrib-imagemin --save-dev
 
+
+php -S localhost:8000 -t dist/
 ```
 
 
